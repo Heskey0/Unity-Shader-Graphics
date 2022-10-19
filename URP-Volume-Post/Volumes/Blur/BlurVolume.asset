@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7079961559512987328
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomBokeh
+  m_EditorClassIdentifier: Assembly-CSharp::CustomBokeh
+  active: 0
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 0
+    m_Value: 0
+  BlurRadius:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &-6345114920378229098
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomTentBlurVolume
+  m_EditorClassIdentifier: Assembly-CSharp::CustomTentBlurVolume
+  active: 0
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 5
+  Offset:
+    m_OverrideState: 1
+    m_Value: 2.85
+--- !u!114 &-6193170422579254706
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0249561ca6f1814aa8a756fdf4a62eb, type: 3}
+  m_Name: Bokeh
+  m_EditorClassIdentifier: 
+  active: 0
+  <displayName>k__BackingField: 
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 9
+  BlurRadius:
+    m_OverrideState: 1
+    m_Value: 2
+  _material: {fileID: 0}
+--- !u!114 &-4609580019215870465
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomGaussianBlur
+  m_EditorClassIdentifier: Assembly-CSharp::CustomGaussianBlur
+  active: 0
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 1
+  BlurOffsetX:
+    m_OverrideState: 1
+    m_Value: 0
+  BlurOffsetY:
+    m_OverrideState: 1
+    m_Value: 0.00005
+--- !u!114 &-3907849405920709095
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TentBlurVolume
+  m_EditorClassIdentifier: Assembly-CSharp::TentBlurVolume
+  active: 0
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 0
+    m_Value: 5
+  Offset:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &-305585667615808239
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edf629585fd9b14cb0a063981c9b24b, type: 3}
+  m_Name: TiltShift
+  m_EditorClassIdentifier: 
+  active: 0
+  <displayName>k__BackingField: 
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 9
+  BlurRadius:
+    m_OverrideState: 1
+    m_Value: 2.93
+  _Offset:
+    m_OverrideState: 1
+    m_Value: -0.53
+  _Area:
+    m_OverrideState: 1
+    m_Value: 2.21
+  _Spread:
+    m_OverrideState: 1
+    m_Value: 3.12
+  _material: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: BlurVolume
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 6969591198395683711}
+--- !u!114 &58565147881667119
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomGaussianBlur
+  m_EditorClassIdentifier: Assembly-CSharp::CustomGaussianBlur
+  active: 0
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 3
+  BlurOffsetX:
+    m_OverrideState: 1
+    m_Value: 0.0018
+  BlurOffsetY:
+    m_OverrideState: 1
+    m_Value: 0.0027
+--- !u!114 &454168849348750463
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TentBlurVolume
+  m_EditorClassIdentifier: Assembly-CSharp::TentBlurVolume
+  active: 0
+  <displayName>k__BackingField: 
+  renderPassEvent: 600
+  _material: {fileID: 0}
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 10
+  Offset:
+    m_OverrideState: 1
+    m_Value: 3.3
+--- !u!114 &815534691534537972
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomIrisBlur
+  m_EditorClassIdentifier: Assembly-CSharp::CustomIrisBlur
+  active: 1
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 9
+  BlurRadius:
+    m_OverrideState: 1
+    m_Value: 4.21
+  _Offset:
+    m_OverrideState: 1
+    m_Value: 0.299
+  _Area:
+    m_OverrideState: 1
+    m_Value: 3.33
+--- !u!114 &1811751036411358504
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomKawase
+  m_EditorClassIdentifier: Assembly-CSharp::CustomKawase
+  active: 0
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 9
+  RTDownScaling:
+    m_OverrideState: 1
+    m_Value: 2.14
+  BlurRadius:
+    m_OverrideState: 1
+    m_Value: 0.68
+--- !u!114 &6969591198395683711
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomGaussianBlur
+  m_EditorClassIdentifier: Assembly-CSharp::CustomGaussianBlur
+  active: 1
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 2
+  BlurOffsetX:
+    m_OverrideState: 1
+    m_Value: 0.0014
+  BlurOffsetY:
+    m_OverrideState: 1
+    m_Value: 0.00246
+--- !u!114 &7154021695622566149
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomTiltShift
+  m_EditorClassIdentifier: Assembly-CSharp::CustomTiltShift
+  active: 0
+  renderPassEvent: 600
+  Iteration:
+    m_OverrideState: 1
+    m_Value: 6
+  BlurRadius:
+    m_OverrideState: 1
+    m_Value: 3.43
+  _Offset:
+    m_OverrideState: 1
+    m_Value: -0.56
+  _Area:
+    m_OverrideState: 1
+    m_Value: 1.73
+  _Spread:
+    m_OverrideState: 1
+    m_Value: 1.9

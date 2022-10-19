@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8784489221033238310
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomRGBSplit
+  m_EditorClassIdentifier: Assembly-CSharp::CustomRGBSplit
+  active: 0
+  renderPassEvent: 600
+  Intensity:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &-8521088472518461455
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f363964b193b584a9c54d1dd19a195d, type: 3}
+  m_Name: WaveJitter
+  m_EditorClassIdentifier: 
+  active: 0
+  <displayName>k__BackingField: 
+  renderPassEvent: 600
+  Frequency:
+    m_OverrideState: 1
+    m_Value: 4.09
+  Speed:
+    m_OverrideState: 1
+    m_Value: 0.13
+  Amount:
+    m_OverrideState: 1
+    m_Value: 1
+  RGBSplit:
+    m_OverrideState: 1
+    m_Value: 1
+  _material: {fileID: 0}
+--- !u!114 &-7567262039225638707
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomWaveJitter
+  m_EditorClassIdentifier: Assembly-CSharp::CustomWaveJitter
+  active: 0
+  renderPassEvent: 600
+  Frequency:
+    m_OverrideState: 1
+    m_Value: 1.88
+  Speed:
+    m_OverrideState: 1
+    m_Value: 0.47
+  Amount:
+    m_OverrideState: 1
+    m_Value: 0.75
+  RGBSplit:
+    m_OverrideState: 1
+    m_Value: 1.47
+--- !u!114 &-1565898290561207543
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomScanLineJitter
+  m_EditorClassIdentifier: Assembly-CSharp::CustomScanLineJitter
+  active: 0
+  renderPassEvent: 600
+  _Amount:
+    m_OverrideState: 1
+    m_Value: 0.1
+  _Frequency:
+    m_OverrideState: 1
+    m_Value: 0.75
+  _Threshold:
+    m_OverrideState: 1
+    m_Value: 0.27
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: GlitchVolume 1
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 5180963760641819422}
+  - {fileID: 2060619412712593437}
+  - {fileID: 7580347146514720483}
+  - {fileID: -1565898290561207543}
+--- !u!114 &2060619412712593437
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomRGBSplit
+  m_EditorClassIdentifier: Assembly-CSharp::CustomRGBSplit
+  active: 0
+  renderPassEvent: 600
+  Intensity:
+    m_OverrideState: 1
+    m_Value: 0.016
+--- !u!114 &3143661457206686555
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001fe824d56af2e45aa9053a11fa0d89, type: 3}
+  m_Name: RGBSplit
+  m_EditorClassIdentifier: 
+  active: 0
+  <displayName>k__BackingField: 
+  renderPassEvent: 600
+  Intensity:
+    m_OverrideState: 0
+    m_Value: 0.03
+  _material: {fileID: 0}
+--- !u!114 &5180963760641819422
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomAnalogNoise
+  m_EditorClassIdentifier: Assembly-CSharp::CustomAnalogNoise
+  active: 0
+  renderPassEvent: 600
+  _Speed:
+    m_OverrideState: 1
+    m_Value: 0.7
+  _LuminanceJitterThreshold:
+    m_OverrideState: 1
+    m_Value: 0.82
+  _Fading:
+    m_OverrideState: 1
+    m_Value: 0.77
+--- !u!114 &7031561717706268873
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomAnalogNoise
+  m_EditorClassIdentifier: Assembly-CSharp::CustomAnalogNoise
+  active: 0
+  renderPassEvent: 600
+  _Speed:
+    m_OverrideState: 1
+    m_Value: 0.05
+  _LuminanceJitterThreshold:
+    m_OverrideState: 1
+    m_Value: 0.711
+  _Fading:
+    m_OverrideState: 1
+    m_Value: 0.674
+--- !u!114 &7580347146514720483
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomWaveJitter
+  m_EditorClassIdentifier: Assembly-CSharp::CustomWaveJitter
+  active: 0
+  renderPassEvent: 600
+  Frequency:
+    m_OverrideState: 1
+    m_Value: 1.56
+  Speed:
+    m_OverrideState: 1
+    m_Value: 0.44
+  Amount:
+    m_OverrideState: 1
+    m_Value: 0.78
+  RGBSplit:
+    m_OverrideState: 1
+    m_Value: 0.84
